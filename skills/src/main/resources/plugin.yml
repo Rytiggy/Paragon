@@ -1,0 +1,10 @@
+name: Skills
+version: ${project.version}
+main: me.paragon.skills.Skills
+api-version: 1.13
+authors: [RyanMason]
+description: Gives players special abilities and progression through skill trees
+website: ryanmasonjar.com
+commands:
+  openMenu:
+    description: "Open the skills menu"
