@@ -1,6 +1,7 @@
 package me.paragon.skills;
 
         import me.paragon.skills.commands.OpenMenu;
+        import me.paragon.skills.commands.ToggleSkillBar;
         import me.paragon.skills.events.ClickGUIEvent;
         import me.paragon.skills.events.OnDeath;
         import me.paragon.skills.events.SwitchInventory;

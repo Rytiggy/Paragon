@@ -31,6 +31,7 @@ public class OpenMenu implements CommandExecutor {
             ArrayList<String> gliderLore = new ArrayList<>();
             gliderLore.add(ChatColor.AQUA + "Equips a Glider.");
             gliderLore.add(ChatColor.GRAY + "Level 1 out of 10");
+            gliderLore.add(ChatColor.GRAY + "Current level: 15 second cool down");
             gliderLore.add(ChatColor.GRAY + "Next level: 10 second cool down");
             gliderMeta.setLore(gliderLore);
 

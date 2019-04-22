@@ -26,17 +26,29 @@ public class ClickGUIEvent implements Listener {
                     ItemStack glider  = new ItemStack(Material.ELYTRA);
                     ItemMeta gliderMeta = glider.getItemMeta();
                     gliderMeta.setDisplayName(ChatColor.BLUE + "Glider");
-
                     ArrayList<String> gliderLore = new ArrayList<>();
                     gliderLore.add(ChatColor.AQUA + "Equips a Glider.");
                     gliderLore.add(ChatColor.GRAY + "Level 1 out of 10");
-                    gliderLore.add(ChatColor.GRAY + "Next level: 10 second cool down");
+                    gliderLore.add(ChatColor.GRAY + "Current level: 15 second cool down");
+                    gliderLore.add(ChatColor.GRAY + "Next level: 14 second cool down");
                     gliderMeta.setLore(gliderLore);
-
                     glider.setItemMeta(gliderMeta);
+
+                    ItemStack boostSpell  = new ItemStack(Material.FEATHER);
+                    ItemMeta boostSpellMeta = boostSpell.getItemMeta();
+                    boostSpellMeta.setDisplayName(ChatColor.BLUE + "Boost");
+                    ArrayList<String> boostSpellLore = new ArrayList<>();
+                    boostSpellLore.add(ChatColor.AQUA + "Boost player forward");
+                    boostSpellLore.add(ChatColor.GRAY + "Level 1 out of 10");
+                    boostSpellLore.add(ChatColor.GRAY + "Current level: 15 second cool down");
+                    boostSpellLore.add(ChatColor.GRAY + "Next level: 14 second cool down");
+                    boostSpellMeta.setLore(boostSpellLore);
+                    boostSpell.setItemMeta(boostSpellMeta);
 
 
                     player.getInventory().setChestplate(glider);
+                    player.getInventory().setItem(8, boostSpell);
+
             }
 
             e.setCancelled(true);
